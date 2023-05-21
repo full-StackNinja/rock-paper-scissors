@@ -4,26 +4,16 @@ function roundPlay(computerChoice, userChoice){
     if (computerChoice ===userChoice){
         return 'round tied';
     }
-    else if (computerChoice ==='rock' && userChoice==='paper'){
+    if (computerChoice ==='rock' && userChoice==='paper' ||
+        computerChoice ==='paper' && userChoice==='scissors' ||
+        computerChoice ==='scissors' && userChoice==='rock')
+        {
         return 'user wins';
     }
-    else if (computerChoice ==='rock' && userChoice==='scissors'){
+    else{
         return 'computer wins';
-    }
-    else if (computerChoice ==='paper' && userChoice==='rock'){
-        return 'computer wins';
-    }
-    else if (computerChoice ==='paper' && userChoice==='scissors'){
-        return 'user wins';
-    }
-    else if (computerChoice ==='scissors' && userChoice==='rock'){
-        return 'user wins';
-    }
-    else if (computerChoice ==='scissors' && userChoice==='paper'){
-        return 'computer wins'
     }
 }
-
 function getComputerChoice(){
     let random = Math.floor(Math.random()*3);
     let choices = ['rock', 'paper', 'scissors'];
@@ -35,7 +25,6 @@ const you = document.querySelector(".you");
 const computer = document.querySelector(".computer");
 const display = document.querySelector(".display-results");
 const userChoice = document.querySelectorAll(".choice");
-                                                                                            
 // Event handler to start the game.
 play.addEventListener("click", ()=>{ 
     if(play.textContent === 'Play Game'){
