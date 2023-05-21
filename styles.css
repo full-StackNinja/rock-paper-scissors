@@ -1,0 +1,62 @@
+html{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #bfbfbe;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.choices{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+}
+button{
+    font-size: 3rem;
+    background-color: #898493;
+    font-weight: 700;
+    width: 200px;
+    font-family:Impact;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px #ff9945;
+}
+.display-results{
+    height: 100px;
+    width: 100%;
+    text-align:left;
+    margin: 100px 100px 50px 50px;
+    color: #111111;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+.you, .computer{
+    font-size: 30px;
+    margin-left: 50px;
+    font-weight: 700;
+    color:#333333;
+}
+.score-board{
+    height: 100px;
+    width: 100%;
+}
+.play{
+    display: flex;
+    justify-content: center;
+    border: 10px solid #649;
+    border-radius: 50px;
+    box-shadow: 0 0 20px 20px #777;
+    font-size: 60px;
+    background-color: aqua;
+    align-items: center;
+    width: 350px;
+    padding: 20px;
+    margin: 100px auto;
+}
